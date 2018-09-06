@@ -1,0 +1,42 @@
+<div id="container">
+    <h1 class="display-4">BURGERS YUM!!!</h1>
+    <div class="row">
+
+        <div class="col-sm-3" id="burgerEat">
+            <h2>On the Menu</h2>
+            <ul>
+                {{#each burgers}} {{#unless this.devoured}}
+                <li>
+                    <p>{{this.burger_name}}</p>
+                    <button class="btn btn-sm" type="submit" data-id="{{id}}" data-ate-burger="{{devoured}}">Devour</button>
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-sm-6" id="burgerOrder">
+            <div>
+                <img class="card-img-top" src="/assets/img/burger3.jpg" alt="Burger Image">
+            </div>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="burgerName">Enter the name of the burger you would like to eat.</label>
+                    <input type="text" name="burger_name" id="burgerName" value=" Burger Name" onfocus="this.value=''">
+                </div>
+                <button class="btn btn-lg" type="submit">Make your Burger</button>
+            </form>
+        </div>
+
+        <div class="col-sm-3" id="burgerAte">
+            <h2>Consumption Tracker</h2>
+            <ul>
+                {{#each burgers}} {{#if this.devoured}}
+                <li>
+                    <p>{{this.burger_name}}</p>
+                </li>
+                {{/if}} {{/each}}
+            </ul>
+        </div>
+
+    </div>
+</div>

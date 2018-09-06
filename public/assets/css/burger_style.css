@@ -1,0 +1,76 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Franklin', sans-serif; */
+
+html {
+    box-sizing: border-box; 
+}      
+*, *:before, *after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(191, 29, 29);
+    background-color: rgba(146, 255, 38, 0.961);
+}
+
+#container {
+    overflow: scroll; 
+    text-align: center;
+    margin: 3%;   
+}
+
+h2 {
+    border-bottom: dotted 3px rgb(191, 29, 29);
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+   height:350px;
+   max-width: 400px;
+   border: 3px solid black;
+   text-align: center;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+#burgerName{
+    border: 2px solid rgb(191, 29, 29);
+    width: 75%;
+    height: 35px;
+    border-radius: 4px;
+    color: rgb(108, 106, 106);
+}
+
+#burgerName:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgb(159, 159, 159);
+}
+
+#burgerOrder {
+    text-align: center;;
+}
+
+.btn {
+    background-color: rgb(191, 29, 29);
+    color: whitesmoke;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem whitesmoke;
+  }
+
+.btn-sm{
+    margin-top: -15px;
+    margin-bottom: 15px;
+    height: 27px;
+    width: 100px;
+}
+
+
